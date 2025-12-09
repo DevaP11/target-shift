@@ -1,0 +1,8 @@
+python3 -m venv pyenv
+source pyenv/bin/activate
+
+Installation
+python3.12 -m pip install pandas fastapi uvicorn numpy scipy scikit-learn pydantic --break-system-packages
+
+Code to execute
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
